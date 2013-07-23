@@ -17,6 +17,10 @@ passed directory.
 Install
 -------
 
+gitcheck depends on the `sh` Python module, which is a wrapper for subprocess. 
+You can install this with `pip` or `easy_install`.
+Once that's complete, run: 
+
     git clone git@github.com:johnjosephhorton/gitcheck.git
 	cd gitcheck
 	sudo python setup.py install 
