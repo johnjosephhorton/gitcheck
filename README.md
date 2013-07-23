@@ -23,17 +23,17 @@ Install
 	
 Example
 -------
-Suppose I have single untracked file in my repository `~/john_stuff_lazy` and a up-to-date repository in `~/john_stuff`. 
+Suppose I have single untracked file in my repository and a single modified file in `~/john_stuff_lazy` and a fully up-to-date repository in `~/john_stuff`. 
 
     $ gitcheck ~ 
-	1 0 ./john_stuf_lazy 
+	1 1 ./john_stuf_lazy 
 	
 	$ gitcheck ~ -v
-	1 0 ./john_stuf_lazy 
+	1 1 ./john_stuf_lazy 
     0 0 ./john_stuf
 	
 	$ gitcheck ~ -va
-	1 0 /home/john/john_stuf_lazy 
+	1 1 /home/john/john_stuf_lazy 
     0 0 /home/john/john_stuf
 	
 	
