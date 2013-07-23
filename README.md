@@ -4,14 +4,14 @@ gitcheck
 Reports counts of modified and untracked files in all git directories within a
 passed directory. 
 
-positional arguments:
-	dir            directory to check
+    positional arguments:
+	    dir            directory to check
 
-optional arguments:
-  -h, --help     show this help message and exit
-  -v, --verbose  show all git statuses (default is only directories with
+    optional arguments:
+      -h, --help     show this help message and exit
+      -v, --verbose  show all git statuses (default is only directories with
                  modified files)
-  -a, --abspath  show absolute path to directory (default is relative path to dir)
+      -a, --abspath  show absolute path to directory (default is relative path to dir)
 
 
 Install
