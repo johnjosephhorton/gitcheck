@@ -12,17 +12,16 @@ __version__ = '0.1'
 import os 
 import sys 
 import argparse
-import sh
- 
+import subprocess 
+
 def git_status(path): 
     '''
     Gets a git 'porcelain' status update from a repository, which is a list of 
     statuses, ??, M, D, A etc..
     '''
     try: 
-        output = sh.git("--git-dir="+os.path.join(path, ".git"), 
-                        "--work-tree="+path, 
-                        "status", porcelain = True)
+        p = subprocess.Popen(["git", "--git-dir=" + os.path.join(path, ".git"), "--work-tree=" + path, "status", "--porcelain"], stdout = subprocess.PIPE)
+        output , err = p.communicate()  
     except: 
         print("Problem with so-called git directory %s" % path)
         output = ""
